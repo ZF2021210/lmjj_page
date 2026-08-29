@@ -23,11 +23,16 @@ python -m http.server 8000
 4. 想像 App 一样用：iPhone Safari 打开后点底部「分享 → 添加到主屏幕」，桌面就有图标了。
 5. 走马灯音乐控制：底栏有「上一首 ⏮ / 播放暂停 ▶ / 停止 ⏹ / 下一首 ⏭」四个按钮。
 
-## 部署到 GitHub Pages（⚠️ 须 Private 仓库）
-1. 在 GitHub 新建仓库——**因已打包明星照片/音乐，务必设为 Private**（公开仓库存在肖像权/版权风险；Private 仓库启用 Pages 需 GitHub Pro）。
-2. 把 `index.html`、`style.css`、`app.js`、`img/`、`music/` 全部上传到仓库根目录。
-3. 仓库 Settings → Pages → Source 选 `main` 分支 `/root` → Save。
-4. 等待几分钟，访问 `https://<用户名>.github.io/<仓库名>/`。
+## 部署到 GitHub Pages / Gitee Pages（已部署·公开）
+已部署为公开仓库，对方直接访问网址即可（相册 / 走马灯 / 音乐全部可用）。
+- **GitHub Pages**：仓库 `ZF2021210/lmjj_page`（public）→ Settings → Pages → Source 选 `main` / `/root` → Save。
+  地址：`https://zf2021210.github.io/lmjj_page/`（HTTPS）
+- **Gitee Pages**（国内更快，主仓库）：仓库 `qdu2016203500/lmjj_page`（public）→ 服务 → Gitee Pages → 部署。
+  需先完成 Gitee 实名认证；免费版为 HTTP（倒计时网页通知可能失效，相册/走马灯/音乐正常）。
+  地址：`http://qdu2016203500.gitee.io/lmjj_page/`
+  后续更新只推 Gitee：`git push gitee main`，再到 Gitee Pages 页点「重新部署」。
+
+仓库根目录需包含：`index.html`（已内联全部 CSS/JS）、`img/`（21 张）、`music/`（8 首）、`.nojekyll`。
 
 ## 功能对照（Android 版基线）
 - 相册：全部/穆/橹/LM 三 chip 筛选；点图全屏可收藏/改分类/分享/删除/转走马灯。
