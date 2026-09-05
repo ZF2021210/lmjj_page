@@ -4,7 +4,7 @@
 
 ## 特点
 - 纯前端，数据存浏览器本地（IndexedDB 存照片/音乐，localStorage 存设置/倒计时），**不上传任何服务器**。
-- **已打包 21 张照片（`img/`）+ 8 首音乐（`music/`）**：首次打开即可见相册、走马灯自动播音乐，无需再导入；仍可点「+ 导入」追加自己的图/音。
+- **已打包 24 张照片（`img/`）+ 8 首音乐（`music/`）**：首次打开即可见相册、走马灯自动播音乐，无需再导入；仍可点「+ 导入」追加自己的图/音。
 - **CSS/JS 已内联进 `index.html`**：单文件自包含，手机浏览器（Safari / Chrome）直接打开就有完整样式与交互，不再依赖外部 css/js 文件加载。
 - 蓝粉应援色主题，移动端优先布局。
 
@@ -30,7 +30,7 @@ python -m http.server 8000
   更新代码后：`git push origin main`，GitHub Pages 会自动重新构建（若有 CDN 缓存，硬刷新即可）。
 - **Gitee 镜像**：仓库 `qdu2016203500/lmjj_page`（public）仅作代码备份；Gitee Pages 托管无法开启，访问请用上面的 GitHub Pages 地址。
 
-仓库根目录需包含：`index.html`（已内联全部 CSS/JS）、`img/`（21 张）、`music/`（8 首）、`.nojekyll`。
+仓库根目录需包含：`index.html`（已内联全部 CSS/JS）、`img/`（24 张）、`music/`（8 首）、`.nojekyll`。
 
 ## 功能对照（Android 版基线）
 - 相册：全部/穆/橹/LM 三 chip 筛选；点图全屏可收藏/改分类/分享/删除/转走马灯。
